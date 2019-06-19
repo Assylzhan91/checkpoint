@@ -1,0 +1,34 @@
+@common-yellow: #faa516;
+@green-light: #87a822;
+@tomato: #cb2632;
+@tomato: #mediumturquoise;
+
+@columns: 12;
+
+@offset: 30px;
+
+@offset_one_side: @offset / 2;
+
+.size(@n){
+  width: calc(100% / @columns * @n - @offset);
+}
+
+
+display-all(){
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.size-md(@n){
+  @media screen and (max-width: 860px){
+    .size(@n);
+  }
+}
+
+.size-xs(@n){
+  @media screen and (max-width: 560px){
+    .size(@n);
+  }
+}
