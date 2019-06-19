@@ -1,7 +1,8 @@
 @common-yellow: #faa516;
 @green-light: #87a822;
 @tomato: #cb2632;
-@tomato: #mediumturquoise;
+
+//@tomato: #mediumturquoise;
 
 @columns: 12;
 
@@ -9,12 +10,12 @@
 
 @offset_one_side: @offset / 2;
 
-.size(@n){
+.size(@n, @offset){
   width: calc(100% / @columns * @n - @offset);
 }
 
 
-display-all(){
+.display-all(){
   display: flex;
   flex-wrap: wrap;
 }

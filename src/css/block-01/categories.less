@@ -1,0 +1,28 @@
+.categories {
+  display: flex;
+  padding: 0 45px;
+  &__item {
+    margin: 0 9px;
+    .size(3, 18px);
+  }
+
+
+}
+
+.event{
+
+  &__wrap{
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    img{
+      transition: all 0.4s linear;
+    }
+    &:hover{
+      img{
+        transform: scale(1.1,1.1);
+      }
+    }
+  }
+}

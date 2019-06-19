@@ -1,0 +1,163 @@
+.blocks{
+  &__title{
+    text-align: center;
+    margin-bottom: 65px;
+    b{
+      font-family: 'League Gothic';
+      font-size: 55px;
+      text-transform: uppercase;
+      line-height: 55px;
+      font-weight: 100;
+      position: relative;
+      &::after{
+
+        content: '';
+        display: inline-block;
+        height: 5px;
+        width: 100%;
+        background: @common-yellow;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    &_white{
+
+      b{
+        color: #fff;
+        &::after{
+          bottom: -10px;
+        }
+      }
+    }
+  }
+
+
+  &__all-events{
+    margin-top: 30px;
+    margin-bottom: 55px;
+  }
+
+  &_dark {
+    background-color: #1a1d1e;
+    padding-top: 45px;
+    margin-bottom: 50px;
+  }
+}
+
+
+
+.list-news{
+  .display-all();
+  margin: 0 -7px;
+  &__item{
+    margin: 0 7px;
+    .size(3, 14px);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+}
+
+.new{
+  background-color: #fff;
+  &__image{
+    margin-bottom: 20px;
+  }
+
+  &__title{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-bottom: auto;
+    a{
+      font-family: 'Roboto';
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #000;
+      font-weight: 600;
+
+      &:hover{
+        color: lighten(#000, 10%);
+      }
+    }
+  }
+
+  &__text {
+
+    font-family: 'Roboto';
+    padding-left: 25px;
+    font-size: 17px;
+    color: lighten(black, 20%);
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+
+    &_loc{
+      color: #000;
+      background-image: url("../img/icon-location.png");
+      .country{
+        color: @common-yellow;
+      }
+    }
+
+    &_data{
+      background-image: url("../img/icon-date.png");
+    }
+
+    &_time{
+      background-image: url("../img/icon-time.png");
+      margin-bottom: 0;
+    }
+  }
+
+  &__registration{
+
+    margin-top: 50px;
+    
+    a{
+      text-transform: uppercase;
+      font-size: 16px;
+      color: darken(#fff, 10%);
+      display: block;
+      padding:5px;
+      text-align: center;
+      background-color: @green-light;
+      &:hover{
+        background-color: darken(@green-light, 20%);
+      }
+    }
+
+    &_red{
+      a{
+        background-color: @tomato;
+        &:hover{
+          background-color: darken(@tomato, 20%);
+        }
+      }
+
+    }
+  }
+}
+
+.link-all{
+  
+  &__text{
+    width: 200px;
+    color: darken(#fff, 10%);
+    display: block;
+    margin: auto;
+    background-color: @common-yellow;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 5px;
+
+    &:hover{
+      background-color: lighten(@common-yellow, 10%);
+      color: lighten(#fff, 10%);
+    }
+  }
+}
+
+
