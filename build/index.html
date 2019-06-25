@@ -3,31 +3,59 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <title>Grid</title>
+        <title>Checkpoint</title>
+        <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/slick.js"></script>
     </head>
     <body>
 
-        <header class="header">
-            <div class="container">
-                <div class="logo header__logo">
-                    <a href=""><img src="img/checkpointasia-logo.png" alt=""></a>
-                </div>
-                <nav class="nav">
-                    <ul class="right-block nav__list">
-                        <li class="right-block">Browse Events</li>
-                        <li class="right-block">Log in</li>
-                        <li class="right-block">Sign Up</li>
-                    </ul>
-                </nav>
+        <div class="header">
 
-                <div class="slider header__bottom">
+            <div class="container-width">
+                <div class="header-wrap">
+                    <div class="logo header__logo">
+                        <a href=""><img src="img/checkpointasia-logo.png" alt=""></a>
+                    </div>
+                    <nav class="nav">
+                        <ul class="right-block nav__list">
+                            <li class="right-block">Browse Events</li>
+                            <li class="right-block">Log in</li>
+                            <li class="right-block">Sign Up</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="my-slider">
+
+                    <div class="my-slider__one"><img src="img/index-slider01.jpg" alt=""></div>
+                    <div class="my-slider__two"><img src="img/index-slider02.jpg" alt=""></div>
+                    <div class="my-slider__three"><img src="img/index-slider03.jpg" alt=""></div>
+                    <div class="my-slider__three"><img src="img/index-slider04.jpg" alt=""></div>
 
                 </div>
             </div>
-        </header>
-        <section class="blocks">
+
+        </div>
+        <div class="content">
+            <div class="left-block">
+                <div class="left-triangle">
+                    <svg class="triangle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 85" preserveAspectRatio="none">
+                        <polygon class="left" points="0,0   0,86   500.8,86   500.8,75.5" fill="#efede7"></polygon>
+                    </svg>
+                </div>
+            </div>
+            <div class="right-block">
+                <div class="right-triangle">
+                    <svg class="triangle" xmlns="http://www.w3.org/2000/svg" viewBox="500 0 500 85" preserveAspectRatio="none">
+                        <polygon class="right" points="1000,0   1000,86   500,86   500,75.5" fill="#efede7"></polygon>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <section class="blocks blocks_mar55px">
             <div class="container">
                 <div class="blocks__title">
                 <b>Latest events</b>
@@ -374,5 +402,373 @@
                 </ul>
             </div>
         </section>
+
+        <section class="create-event create-event_mar85px">
+            <div class="container">
+
+                <div class="left-event create-event__title">
+                    <h3>Want to create  an <span>event?</span></h3>
+                </div>
+
+                <div class="right-link create-event__link">
+                    <a href="">Learn more</a>
+                    <span class="arrow"></span>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="blocks blocks_mar90px">
+            <div class="container">
+                <div class="blocks__title">
+                    <b>Closed Events</b>
+                </div>
+                <ul class="list-news">
+
+                    <li class="new list-news__item">
+                        <a href="#" class="new__image">
+                            <img src="img/event-thumb05.jpg" alt="">
+                        </a>
+
+                        <div class="new__title">
+                            <a href="#">MesaMall Merdeka Cross Country 2019 </a>
+                        </div>
+
+                        <div class="new__text new__text_loc">
+                            <span class="city">MesaMall Nilai Town,</span>
+                            <span class="country">Nilai</span>
+                        </div>
+
+                        <div class="new__text new__text_data">
+                            <span>31 Aug 2019</span>
+                        </div>
+
+                        <div class="new__text new__text_time">
+                            <span>7:00AM</span>
+                        </div>
+
+                        <div class="new__registration">
+                            <a href="#">Registration  Open</a>
+                        </div>
+                    </li>
+                    <li class="new list-news__item">
+                        <a href="#" class="new__image">
+                            <img src="img/event-thumb06.jpg" alt="">
+                        </a>
+
+                        <div class="new__title">
+                            <a href="#">Ipoh 7 Bridges Run 2019</a>
+                        </div>
+
+                        <div class="new__text new__text_loc">
+                            <span class="city">Jabatan Belia & Sukan, Ipoh,</span>
+                            <span class="country"> Perak </span>
+                        </div>
+
+                        <div class="new__text new__text_data">
+                            <span>22 Sept 2019</span>
+                        </div>
+
+                        <div class="new__text new__text_time">
+                            <span>3:00AM</span>
+                        </div>
+
+                        <div class="new__registration">
+                            <a href="#">Registration  Open</a>
+                        </div>
+                    </li>
+                    <li class="new list-news__item">
+                        <a href="#" class="new__image">
+                            <img src="img/event-thumb07.jpg" alt="">
+                        </a>
+
+                        <div class="new__title">
+                            <a href="#">Love Malaysia - Run For Humanity 2019 </a>
+                        </div>
+
+                        <div class="new__text new__text_loc">
+                            <span class="city">Anjung Floria, </span>
+                            <span class="country">Putrajaya</span>
+                        </div>
+
+                        <div class="new__text new__text_data">
+                            <span>16 Sept 2019</span>
+                        </div>
+
+                        <div class="new__text new__text_time">
+                            <span>4:00PM</span>
+                        </div>
+
+                        <div class="new__registration">
+                            <a href="#">Registration  Open</a>
+                        </div>
+                    </li>
+                    <li class="new list-news__item">
+                        <a href="#" class="new__image">
+                            <img src="img/event-thumb08.jpg" alt="">
+                        </a>
+
+                        <div class="new__title">
+                            <a href="#">Mid Valley City Charity Run 2019</a>
+                        </div>
+
+                        <div class="new__text new__text_loc">
+                            <span class="city">Mid Valley City,</span>
+                            <span class="country"> Kuala Lumpur</span>
+                        </div>
+
+                        <div class="new__text new__text_data">
+                            <span>22 Sept 2019</span>
+                        </div>
+
+                        <div class="new__text new__text_time">
+                            <span>7:00AM</span>
+                        </div>
+
+                        <div class="new__registration">
+                            <a href="#">Registration  Open</a>
+                        </div>
+                    </li>
+                    <li class="new list-news__item">
+                        <a href="#" class="new__image">
+                            <img src="img/event-thumb09.jpg" alt="">
+                        </a>
+
+                        <div class="new__title">
+                            <a href="#">Run Out Marathon Kuala Lumpur 2019Country 2019 </a>
+                        </div>
+
+                        <div class="new__text new__text_loc">
+                            <span class="city">Persiaran Flora,</span>
+                            <span class="country">Cyberjaya</span>
+                        </div>
+
+                        <div class="new__text new__text_data">
+                            <span> 16 June2019</span>
+                        </div>
+
+                        <div class="new__text new__text_time">
+                            <span> 7:30AM</span>
+                        </div>
+
+                        <div class="new__registration">
+                            <a href="#">Registration  Open</a>
+                        </div>
+                    </li>
+                    <li class="new list-news__item">
+                        <a href="#" class="new__image">
+                            <img src="img/event-thumb10.jpg" alt="">
+                        </a>
+
+                        <div class="new__title">
+                            <a href="#">Kuantan Breakfast Run 2019</a>
+                        </div>
+
+                        <div class="new__text new__text_loc">
+                            <span class="city">Padang MPK1, Kuantan,</span>
+                            <span class="country">Pahang</span>
+                        </div>
+
+                        <div class="new__text new__text_data">
+                            <span> 25 Aug 2019</span>
+                        </div>
+
+                        <div class="new__text new__text_time">
+                            <span> 7:30AM</span>
+                        </div>
+
+                        <div class="new__registration new__registration_red">
+                            <a href="#">Registration  Closed</a>
+                        </div>
+                    </li>
+                    <li class="new list-news__item">
+                        <a href="#" class="new__image">
+                            <img src="img/event-thumb11.jpg" alt="">
+                        </a>
+
+                        <div class="new__title">
+                            <a href="#">Journey To The Earth Center 2019 </a>
+                        </div>
+
+                        <div class="new__text new__text_loc">
+                            <span class="city"> Anywhere you like,</span>
+                            <span class="country"> Putrajaya</span>
+                        </div>
+
+                        <div class="new__text new__text_data">
+                            <span>1 June2019</span>
+                        </div>
+
+                        <div class="new__text new__text_time">
+                            <span> 4:00PM</span>
+                        </div>
+
+                        <div class="new__registration new__registration_red">
+                            <a href="#">Registration Closed</a>
+                        </div>
+
+                    </li>
+                    <li class="new list-news__item">
+                        <a href="#" class="new__image">
+                            <img src="img/event-thumb12.jpg" alt="">
+                        </a>
+
+                        <div class="new__title">
+                            <a href="#">CICM Responsible Care Run 2019  </a>
+                        </div>
+
+                        <div class="new__text new__text_loc">
+                            <span class="city"> Alam Nusantara, Shah Alam,</span>
+                            <span class="country"> Selangor</span>
+                        </div>
+
+                        <div class="new__text new__text_data">
+                            <span> 18 Aug2019</span>
+                        </div>
+
+                        <div class="new__text new__text_time">
+                            <span> 5:40AM</span>
+                        </div>
+
+                        <div class="new__registration">
+                            <a href="#">Registration  Open</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <div class="link-all blocks__all-events">
+                    <a class="link-all__text" href="#">See All Closed Events</a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+
+                <div class="subscribe footer__top">
+                    <div class="subscribe__title">
+                        DISCOVER MORE
+                        <span>Join our newsletter</span>
+                    </div>
+
+                    <div class="subscribe__box">
+                        <input class="subscribe__input" type="text" placeholder="Enter your email address"></input>
+                        <div class="subscribe__btn">
+                            <button>Subscribe</button>
+                        </div>
+                    </div>
+
+                    <div class="subscribe__text">
+                        By clicking Subscribe,
+                        you have agreed to our <a href="#">Terms & Condition</a>
+                        and <a href="#">Privacy Policy</a>
+                    </div>
+
+                </div>
+
+                <div class=" footer__bottom">
+                    <ul class="footer-list">
+
+                        <li class="footer-list__item">
+                            <div class="footer-list__title">
+                                <h4>About Checkpoint</h4>
+                            </div>
+
+                            <div class="footer-list__link">
+                                <a href="#">Contact Us</a>
+                            </div>
+
+                            <div class="footer-list__link">
+                                <a href="#">About Us</a>
+                            </div>
+
+                        </li>
+
+                        <li class="footer-list__item">
+                            <div class="footer-list__title">
+                                <h4>EVENTS</h4>
+                            </div>
+
+                            <div class="footer-list__link">
+                                <a href="#">Browse Events</a>
+                            </div>
+
+                            <div class="footer-list__link">
+                                <a href="#"> Event Registration login         </a>
+                            </div>
+
+                        </li>
+
+                        <li class="footer-list__item">
+                            <div class="footer-list__title">
+                                <h4>Term Of Use</h4>
+                            </div>
+
+                            <div class="footer-list__link">
+                                <a href="#">Terms And Conditions</a>
+                            </div>
+
+                            <div class="footer-list__link">
+                                <a href="#">Privacy Policy</a>
+                            </div>
+
+                            <div class="footer-list__link">
+                                <a href="#">Cookie Policy</a>
+                            </div>
+
+                        </li>
+
+
+                    </ul>
+
+                    <ul class="social">
+                        <li class="social__text">
+                            <span>
+                                Checkpoint Spot,
+                                Copyright 2019. All rights reserved
+                            </span>
+                        </li>
+
+                        <li class="social__item">
+                            <a class="social__icon social__icon_fb" href=""></a>
+                        </li>
+
+                        <li class="social__item">
+                            <a class="social__icon social__icon_inst" href=""></a>
+                        </li>
+
+                        <li class="social__item">
+                            <a class="social__icon social__icon_tw" href=""></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+
+    <div class="scroll">
+        <button class="scroll__btn"></button>
+    </div>
+
+   <!-- <script src="js/jquery.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/custom.js"></script>-->
+        <script>
+          $('.my-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+          });
+
+          /*$('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+          });*/
+
+        </script>
     </body>
 </html>

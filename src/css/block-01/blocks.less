@@ -1,4 +1,5 @@
 .blocks{
+
   &__title{
     text-align: center;
     margin-bottom: 65px;
@@ -36,17 +37,24 @@
 
   &__all-events{
     margin-top: 30px;
-    margin-bottom: 55px;
+    text-align: center;
   }
 
   &_dark {
     background-color: #1a1d1e;
-    padding-top: 45px;
+    padding: 45px 0 50px;
     margin-bottom: 50px;
   }
+
+  &_mar55px{
+    margin-bottom: 55px;
+  }
+
+  &_mar90px{
+    margin-bottom: 90px;
+  }
+
 }
-
-
 
 .list-news{
   .display-all();
@@ -144,12 +152,12 @@
 .link-all{
   
   &__text{
-    width: 200px;
+
     color: darken(#fff, 10%);
-    display: block;
+    display: inline-block;
     margin: auto;
     background-color: @common-yellow;
-    padding: 15px 0;
+    padding: 15px 50px;
     text-align: center;
     border-radius: 5px;
 
@@ -159,5 +167,3 @@
     }
   }
 }
-
-

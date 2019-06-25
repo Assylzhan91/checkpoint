@@ -20,6 +20,8 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
 @font-face {
   font-family: 'Roboto-Black';
   src: url('../fonts/roboto/Roboto-Black.eot');
@@ -32,7 +34,20 @@
 }
 
 
-ul, li, p, h3  {
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto/Roboto-Thin.eot');
+  src: local('Roboto Thin'), local('Roboto-Thin'),
+  url('../fonts/roboto/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/roboto/Roboto-Thin.woff') format('woff'),
+  url('../fonts/roboto/Roboto-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+
+ul, li, p, h3, h4  {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -50,6 +65,12 @@ a {
   max-width: 1260px;
   margin: auto;
   padding: 0 30px;
+
+  &-width {
+    max-width: 1400px;
+    margin: auto;
+  }
+
 }
 
 
@@ -60,6 +81,23 @@ html, body{
   background-color: #efede7;
 }
 
+
+.div-block{
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  max-width: 1260px;
+  padding: 0 30px;
+  position: relative;
+  div {
+    position: fixed;
+    background-color: rgba(#eee, .5);
+    border-right: 1px solid;
+    border-left: 1px solid;
+    .size(1, 30px);
+
+  }
+}
 
 
 

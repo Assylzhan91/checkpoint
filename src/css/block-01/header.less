@@ -1,9 +1,21 @@
 .header {
-  background-image: url("../img/index-slider01.jpg");
   margin-bottom: 85px;
-  .container {
 
+  .container-width {
+    position: relative;
   }
+
+  &-wrap {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    z-index: 100;
+  }
+
+
+
   &__logo{
     width: 255px;
     height: 55px;
@@ -12,4 +24,8 @@
       display: block;
     }
   }
+}
+
+.header-wrap {
+
 }
