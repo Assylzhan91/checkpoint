@@ -12,6 +12,7 @@
     justify-content: space-between;
     padding: 0 100px;
     z-index: 100;
+    margin-top: 30px;
   }
 
 
@@ -26,6 +27,21 @@
   }
 }
 
-.header-wrap {
+.nav-list {
+  .display-all();
 
+  &__item{
+  margin-right: 70px;
+    &:last-child{
+      margin-right: 0;
+    }
+    a{
+      color: #fff;
+      font-size: 22px;
+
+      &:hover{
+        color: darken(#fff, 20%);
+      }
+    }
+  }
 }

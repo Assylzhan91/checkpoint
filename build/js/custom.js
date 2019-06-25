@@ -1,3 +1,7 @@
-/**
- * Created by ASSYL on 24.06.2019.
- */
+$('.my-slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});
