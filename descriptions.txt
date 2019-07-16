@@ -1,0 +1,4 @@
+This template is not mine, I just translated it from PSD to HTML / CSS. In this project I did not use any frameworks. I try to write on the native CSS, since I control my code better.
+This project is based on FLEX technology.
+
+In the source code of this project there were no social networking icons, so I had to cut out the sprite in order to change their color when hovering.
